@@ -3,6 +3,12 @@ import { motion } from 'framer-motion';
 import { ChevronRight, CheckCircle2, Upload, Database, Layers, ArrowRight, ShieldCheck, Zap, Activity, CircleDot, Play } from 'lucide-react';
 import './index.css';
 
+import heroImg from './assets/hero_image.png';
+import feat1Img from './assets/feat1.png';
+import feat2Img from './assets/feat2.png';
+import feat3Img from './assets/feat3.png';
+import feat4Img from './assets/feat4.png';
+
 const TopNav = () => (
   <nav className="top-nav">
     <div className="container top-nav-inner">
@@ -79,7 +85,7 @@ const Hero = () => (
         style={{ padding: '4px', background: 'var(--colors-hairline)', maxWidth: '1200px', width: '100%' }}
       >
         <div style={{ borderRadius: '12px', overflow: 'hidden', border: '1px solid var(--colors-hairline-strong)', boxShadow: '0 20px 40px rgba(0,0,0,0.4)' }}>
-          <img src="/hero_image.png" alt="Candidate Dashboard UI" style={{ width: '100%', height: 'auto', display: 'block' }} />
+          <img src={heroImg} alt="Candidate Dashboard UI" style={{ width: '100%', height: 'auto', display: 'block' }} />
         </div>
       </motion.div>
     </div>
@@ -94,25 +100,25 @@ const AppJourney = () => {
       id: 0,
       title: "JD Baseline Engine",
       desc: "Define strict skill and experience parameters for your open role.",
-      img: "/feat1.png"
+      img: feat1Img
     },
     {
       id: 1,
       title: "Intelligent Ingestion",
       desc: "Upload bulk CVs. Our engine extracts data points instantly.",
-      img: "/feat2.png"
+      img: feat2Img
     },
     {
       id: 2,
       title: "Centralized Scoring",
       desc: "View an interactive database scored entirely against your JD.",
-      img: "/feat3.png"
+      img: feat3Img
     },
     {
       id: 3,
       title: "Deep Comparison",
       desc: "Select candidates and compare experience gaps side-by-side.",
-      img: "/feat4.png"
+      img: feat4Img
     }
   ];
 
